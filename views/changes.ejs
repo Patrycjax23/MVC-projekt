@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Changes</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Make Changes</h1>
+    <form action="/events/<%= event.id %>/changes" method="POST"> 
+        <label for="data">New Date:</label>
+        <input type="date" id="data" name="data" required><br><br>
+        <label for="miejsce">New Place:</label>
+        <input type="text" id="miejsce" name="miejsce" required><br><br>
+        <button type="submit">Save Changes</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "projekt-mvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "node": "^18.20.2",
+    "nodemon": "^3.1.0",
+    "session": "^0.1.0"
+  }
+}

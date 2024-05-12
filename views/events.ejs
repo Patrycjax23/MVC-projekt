@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Events</h1>
+    <a href="/add-event">Add Event</a>
+    <ul>
+        <% events.forEach(event => { %>
+            <li>
+                <h2><%= event.nazwa %></h2>
+                <p>Date: <%= event.data %></p>
+                <p>Place: <%= event.miejsce %></p>
+               
+                <form action="/events/<%= event.id %>/delete" method="post">
+                    <button type="submit">Delete</button>
+                </form>
+
+                <a href="/events/<%= event.id %>/changes">Make Changes</a>
+            </li>
+            
+        <% }); %>
+    </ul>
+</body>
+</html>
+
+
+
